@@ -1,20 +1,33 @@
-html{
-  font-size: 62.5%;
+:root{
+  --mainBlue: #2a2a72;
+  --lightBlue:#009ffd;
+  --mainWhite:#f3f3f3;
+  --mainDark:#232528;
+  --mainYellow:#ffa400;
+}
+
+*{
+  margin:0;
+  padding:0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-body,
-#root{
-  height: 10vh;
-  margin: 0;
+.text-title {
+  font-family: 'Poppins', cursive;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
 }
 
-body, input, select, textarea{
-  font-size:1.6rem;
-  font-family: Helvetica, sans-serif;
+.text-blue{
+  color: var(--mainBlue);
 }
 
-.grid-container {
+.text-bright{
+  color: var(--lightBlue);
+}
+
+/* .grid-container {
   display: grid;
   grid-template-areas: "header"
   "main"
@@ -53,3 +66,16 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main{
+  flex: 3 60rem;
+}
+
+.sidebar{
+  flex: 1 20rem;
+} */
