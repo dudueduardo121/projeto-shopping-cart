@@ -25,7 +25,7 @@ export default class Navbar extends Component {
             <Link to="/cart" className="ml-auto">
                 <ButtoContainer>
                     <span className="mr-2"> 
-                        <img src={Cart} width="20px" alt="cart"/>
+                        <img src={Cart} width="30px" alt="cart"/>
                     </span>
                     my cart
                 </ButtoContainer>
