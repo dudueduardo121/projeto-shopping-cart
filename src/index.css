@@ -28,6 +28,25 @@
   color: var(--lightBlue);
 }
 
+.btn-black{
+  background: transparent;
+  text-transform: capitalize;
+  font-size: -.8rem!important;
+  color: var(--mainDark);
+  border-radius: 0 !important;
+  border:0.1rem solid var(--mainBlue) !important;
+}
+
+.btn-black:hover{
+  background: var(--mainBlue)!important;
+  color: var(--mainWhite)!important;
+}
+
+.cart-icon{
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--mainYellow);
+}
 /* .grid-container {
   display: grid;
   grid-template-areas: "header"
