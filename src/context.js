@@ -140,7 +140,8 @@ class ProductProvider extends Component {
         })
 
     };
-
+    
+    /* clear cart */
     cleaCart = () => {
         this.setState(
             ()=>{
