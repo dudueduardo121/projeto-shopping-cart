@@ -14,8 +14,7 @@ export default function CartTotals({value}) {
                             <button 
                                 className="btn btn-outline-danger text-uppercase mb-3 px-5" 
                                 type="button" 
-                                onClick={()=> clearCart()}
-                            >
+                                onClick={()=> clearCart}>
                                 clear cart
                             </button>
                         </Link>
