@@ -9,12 +9,12 @@ class ProductProvider extends Component {
     state ={
         products: [],
         detailProduct:detailProduct,
-        cart:storeProducts,
+        cart: [],
         modalOpen: false,
         modalProduct: detailProduct,
-        cartSubTotal:0,
-        cartTax:0,
-        cartTotal:0
+        cartSubTotal: 0,
+        cartTax: 0,
+        cartTotal: 0
     };
 
     componentDidMount(){
@@ -87,6 +87,14 @@ class ProductProvider extends Component {
     cleaCart = () =>{
         console.log('cart cleared');
     };
+
+    addTotals = () => {
+        let subTotal = 0;
+        this.state.cart.map(item => (subTotal += item.total));
+        const tempTax = subTotal * 0.1;
+        const tax = parseFloat(tempTax.toFixed(2));
+        const total = subTotal + tax
+    }
 
 
     render() {
